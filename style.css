@@ -1,0 +1,476 @@
+/* OVERALL------------------------------------------------------------------------------- */
+main{
+    /* background-color: #0e0e7b; */
+    color:white;
+    /* text-shadow: 5px 5px black; */
+    padding-top: 50px;
+
+}
+main > section:nth-of-type(2n+1){
+  background-color: #0e0e7b; 
+}
+
+h2{
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+p{
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+h2 span{
+    color:#f973b8;
+}
+main section:nth-of-type(2n){
+  color: #0e0e7b; 
+}
+section{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* STYLISH HEADING TEXT  */
+#diff-home{
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+ padding-top: 80px;
+ padding-bottom: 40px;
+ padding-left: 10px;
+}
+
+.heading-text{
+  font-family: 'Rocher';
+  text-align: center;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: 'Rocher';
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+@font-palette-values --Purples {
+  font-family: Rocher;
+  base-palette: 6;
+}
+
+.purples {
+  font-palette: --Purples;
+}
+
+/* LOADER */
+#splash {
+  background: #ffb5db;;
+  background-repeat: repeat-y;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: splash 3s ease-in;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  z-index: 1000;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%,0);
+}
+
+#loader:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  bottom: -170px;
+  width: 3px;
+  background: #fff;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+  height: 200px;
+}
+
+#loader:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: 8px;
+  bottom: -190px;
+  width: 3px;
+  background: #000;
+  background: linear-gradient(to bottom, rgba(0,0,0,.2) 0%, rgba(0,0,0,.2) 50%, rgba(0,0,0,0) 100%);
+  height: 200px;
+}
+
+#splash .anim {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  width: 100px;
+  transform: translate(-50%,100%);
+  animation: loader 4s linear;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes loader {
+  0% {
+    transform: translate(-50%,110%);
+  }
+  30% {
+    transform: translate(-50%,50%);
+  }
+  100% {
+    transform: translate(-50%,0%);
+  }
+}
+
+@keyframes splash {
+  0% {
+    transform: translate(0%,0%);
+  }
+  50% {
+    transform: translate(0%,0%);
+  }
+  100% {
+    transform: translate(0%,-100%);
+  }
+}
+
+/* NAVBAR---------------------------------------------------------------- */
+#logo-name{
+    font-weight: bold;
+    line-height: normal;
+    padding-top: 5px;
+}
+nav{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 10px;
+}
+
+/* fixed navbar */
+.navbar{ 
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 999;
+}
+
+/* HOME-------------------------------------------------------------------- */
+#home{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+   padding-top: 80px;
+   padding-bottom: 40px;
+   padding-left: 10px;
+}
+h1,.left{
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    letter-spacing:-1px;
+    text-align: center;
+    
+}
+
+@media(max-width:412){
+    #home{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       padding-left: 10px;
+    }
+    h1,.left{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        letter-spacing:-1px;
+        text-align: center;
+        
+    }
+}
+
+@media(max-width:280){
+    #home{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       padding-left: 10px;
+    }
+    h1,.left{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        letter-spacing:-1px;
+        text-align: center;
+        
+    }
+}
+
+.explore-btn{
+  /* Your button styles */
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff; /* Text color, replace with your desired color */
+  border: none; /* Remove default button border */
+  transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+
+  /* Box shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow, you can adjust the values */
+
+  /* Button press effect */
+  &:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the values for the pressed effect */
+    transform: translateY(2px); /* Move the button down slightly on press */
+  }
+}
+  
+/* Follow us on---------------------------------------------------------- */
+#social-media{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.social-media-icon{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #0e0e7b;
+}
+
+/* Why coding brigaders?----------------------------------------------- */
+/* CARDS */
+.why-cards,
+.why-cards::before,
+.why-cards::after {
+  box-sizing: border-box;
+}
+
+.why-cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Oxygen", sans-serif;
+  color: #050505;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+
+}
+
+.card_num {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 0.25rem;
+  background-color: #c89b3f;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card_num span {
+  font-size: 12px;
+  margin-top: -2px;
+}
+
+.note {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 4px 8px;
+  border-radius: 0.25rem;
+  background-color: #c89b3f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  position: relative;
+  padding: 16px 12px 32px 24px;
+  margin: 16px 8px 8px 0;
+  max-height: 290px;
+  overflow-y: scroll;
+}
+
+.card_content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card_content::-webkit-scrollbar-track {
+  box-shadow: 0;
+  border-radius: 0;
+}
+
+.card_content::-webkit-scrollbar-thumb {
+  background: #c89b3f;
+  border-radius: 15px;
+}
+
+.card_title {
+  position: relative;
+  margin: 0 0 24px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card_title::after {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #c89b3f;
+  content: "";
+}
+
+hr {
+  margin: 24px auto;
+  width: 50px;
+  border-top: 2px solid #c89b3f;
+}
+
+.card_text p {
+  margin: 0 0 24px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card_text p:last-child {
+  margin: 0;
+}
+
+/* -- Meet your instructor --------------------------------------------------------- */
+/* Responsive Founder Section styles */
+.founder-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.founder-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.founder-image {
+  flex: 1;
+  padding: 0 20px;
+
+}
+
+.founder-image img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto; /* Center the image horizontally */
+  display: block; /* Ensures image behaves as a block element */
+  border-radius: 90px;
+}
+
+
+.founder-text {
+  flex: 1;
+  padding:20px;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .founder-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .founder-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .founder-image,
+  .founder-text {
+    flex: none;
+    width: 100%;
+  }
+}
+
+/* -- What would you like to learn? ------------------------------------------------------------------------------- */
+.accordion{
+  display:block;
+  padding: 5%;
+}
+
+/* WEB DEVELOPMENT============================================== */

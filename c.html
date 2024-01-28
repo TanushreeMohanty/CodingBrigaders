@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="coding brigaders logo.jpg" type="image/png"  width="14" height="20">
+    <title>C Language-Coding Brigaders</title>
+    <!-- FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP CSS (BY DEFAULT) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- LOADER --------------------------------------------------->  
+<!-- <div id="splash">
+  <div class="anim">
+    <div id="loader">
+      <svg version="1.1" width="60px" height="70px" viewBox="0 0 60 70">
+        <defs>
+          <filter id="f1" x="0" y="0">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+          </filter>
+        </defs>
+        <g id="airplane">
+          <path fill="#000" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+          h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+          c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+          c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+          c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+          C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(44,0) rotate(90 0 0)" />
+        </g>
+        <g id="shadow" transform="scale(.9)">
+          <path fill="#000" fill-opacity="0.3" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+      		h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+      		c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+      		c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+      		c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+      		C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(64,30) rotate(90 0 0)" filter="url(#f1)" />
+        </g>
+      </svg>
+    </div>
+  </div>
+</div> -->
+<!-- NAVBAR --------------------------------------------------->
+    <nav class="navbar navbar-expand-lg" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="coding brigaders logo.jpg" alt="Logo" width="45" height="45" class="d-inline-block align-text-top">
+            <!-- <img src="name coding brigaders logo.jpg" alt="Logo" width="300" height="40" class="d-inline-block align-text-top"> -->
+            <span class="d-inline-block align-text-top" id="logo-name"> <span style="color:#f973b8;">CODING</span> <span style="color: #0e0e7b;">BRIGADERS</span></span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Courses
+                </a>
+                <ul class="dropdown-menu" >
+                  <li><a class="dropdown-item" href="webdev.html">Web Development</a></li>
+                  <li><a class="dropdown-item" href="c.html">C Language</a></li>
+                  <li><a class="dropdown-item" href="dsa.html">DSA</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Extras
+                </a>
+                <ul class="dropdown-menu" >
+                  <li><a class="dropdown-item" href="project.html">Mini-Projects</a></li>
+                  <li><a class="dropdown-item" href="quiz.html">Quiz</a></li>
+                  <li><a class="dropdown-item" href="webinar-seminar.html">Webinars & Seminars</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<main>
+  <div id="diff-home">
+    <div class="left heading-text purples">
+        <h1 style="padding-bottom: 20px;">C LANGUAGE</h1>
+    </div>
+    <div class="right">
+        <img src="c.svg" alt="Bootstrap" width="300" height="200"> <br>
+    </div>
+</div>
+</main>      
+<!-- FOOTER ---------------------------------------------------->
+<footer class="text-center text-lg-start" style="background-color:#0e0e7b">
+
+  <!-- Copyright -->
+  <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+   Copyright © 2024 Coding Brigaders All Rights reserved <br>
+    <a class="text-white" href="https://www.linkedin.com/in/tanushree-mohanty-69353323b/">Designed by Tanushree Mohanty</a>
+  </div>
+</footer>
+  
+      <!-- BOOTSTRAP JS (BY DEFAULT) -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+  </body>
+  </html>

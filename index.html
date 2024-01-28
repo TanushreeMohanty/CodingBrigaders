@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="coding brigaders logo.jpg" type="image/png"  width="14" height="20">
+    <title>Coding Brigaders</title>
+    <!-- FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP CSS (BY DEFAULT) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- LOADER --------------------------------------------------->  
+<!-- <div id="splash">
+  <div class="anim">
+    <div id="loader">
+      <svg version="1.1" width="60px" height="70px" viewBox="0 0 60 70">
+        <defs>
+          <filter id="f1" x="0" y="0">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+          </filter>
+        </defs>
+        <g id="airplane">
+          <path fill="#000" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+          h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+          c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+          c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+          c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+          C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(44,0) rotate(90 0 0)" />
+        </g>
+        <g id="shadow" transform="scale(.9)">
+          <path fill="#000" fill-opacity="0.3" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+      		h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+      		c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+      		c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+      		c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+      		C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(64,30) rotate(90 0 0)" filter="url(#f1)" />
+        </g>
+      </svg>
+    </div>
+  </div>
+</div> -->
+<!-- NAVBAR --------------------------------------------------->
+    <nav class="navbar navbar-expand-lg" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="coding brigaders logo.jpg" alt="Logo" width="45" height="45" class="d-inline-block align-text-top">
+            <!-- <img src="name coding brigaders logo.jpg" alt="Logo" width="300" height="40" class="d-inline-block align-text-top"> -->
+            <span class="d-inline-block align-text-top" id="logo-name"> <span style="color:#f973b8;">CODING</span> <span style="color: #0e0e7b;">BRIGADERS</span></span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Courses
+                </a>
+                <ul class="dropdown-menu" >
+                  <li><a class="dropdown-item" href="webdev.html">Web Development</a></li>
+                  <li><a class="dropdown-item" href="c.html">C Language</a></li>
+                  <li><a class="dropdown-item" href="dsa.html">DSA</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Extras
+                </a>
+                <ul class="dropdown-menu" >
+                  <li><a class="dropdown-item" href="project.html">Mini-Projects</a></li>
+                  <li><a class="dropdown-item" href="quiz.html">Quiz</a></li>
+                  <li><a class="dropdown-item" href="webinar-seminar.html">Webinars & Seminars</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<main>
+<!-- HOME ------------------------------------------------->
+<section>
+<div id="home">
+  <div class="left">
+  <h1 style="padding-bottom: 20px;">Welcome <br> to <br> Coding Brigaders</h1>
+  <a href="#why-cb"><button type="button" class="btn explore-btn" style="background-color: #fa3e9f;color: white;box-shadow: 0 4px 8px rgba(0, 0, 0);">Explore!</button></a>
+</div>
+  <div class="right">
+    <img src="Online tech talks-amico.svg" alt="Bootstrap" width="300" height="300"> <br>
+  </div>
+</div>
+</section>
+<!-- Follow us on ------------------------------------------>
+<section>
+<div>
+  <h2>Follow <span>us</span> on</h2>
+  <div id="social-media" style=" padding-top: 20px;">
+    <div class="social-media-icon">
+     <a href="https://www.linkedin.com/company/101227357/admin/feed/posts/"> <img src="linkedin1.png" alt="" width="50" height="50">
+      <p>Linkedin</p>
+    </a>
+    </div>
+    <div class="social-media-icon">
+      <a href="https://www.instagram.com/codingbrigaders/">
+      <img src="instagram1.png" alt="" width="50" height="50">
+      <p>Instagram</p>
+    </a>
+    </div>
+    <div class="social-media-icon">
+      <a href="https://www.youtube.com/@CodingBrigaders">
+      <img src="youtube1.png" alt="" width="50" height="50">
+      <p>Youtube</p>
+    </a>
+    </div>
+    
+    
+  </div>
+</div>
+</section>
+<!-- Why coding brigaders? -------------------------------->
+<section id="why-cb">
+<div id="why-coding-brigaders">
+  <h2>Why <span>Coding</span> Brigaders <span>?</span></h2>
+  <!-- CARDS -->
+<div class="why-cards">
+  <ul class="cards">
+<!-- Card: Mini Projects -->
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_content">
+          <h2 class="card_title">Mini Projects</h2>
+          <div class="card_text">
+            <p>Small-scale endeavors to practice and apply specific skills in software development or computer science within a limited scope and timeframe.
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+<!-- Card: Quiz-->
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_content">
+          <h2 class="card_title">Quiz</h2>
+          <div class="card_text">
+            <p>Tests or games with questions to assess knowledge or skills in a specific subject, often used for learning or entertainment purposes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+<!-- Card: Seminars & Webinars-->
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_content">
+          <h2 class="card_title">Seminars & Webinars</h2>
+          <div class="card_text">
+            <p>Seminars are in-person events where experts present on a specific topic to an audience, allowing for interaction and discussion. Webinars are similar but conducted online, allowing people to attend remotely via the internet. Both are educational platforms used for learning and sharing knowledge.
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+</section>
+<!-- Meet your instructor ------------------------------------>
+<section>
+<div id="instructor">
+  <h2>Meet <span>your</span> instructor</h2>
+  <div class="founder-section">
+    <div class="founder-content">
+      <div class="founder-image">
+        <img src="tanu6.png" alt="Founder Image" width="300" height="200" style="box-shadow: 0 4px 8px rgba(0, 0, 0);">
+      </div>
+      <div class="founder-text">
+        <h2>Tanushree Mohanty</h2>
+        <p> <i>Founder, Coding Brigaders</i> | Web Developer</p>
+        <a href=""><p style="font-weight: bold;"><img src="gfg-logo.svg" alt="" width="50" height="50">&nbsp;&nbsp; Geeksforgeeks Campus Ambassador</p></a>
+        <div id="social-media">
+          <div class="social-media-icon">
+           <a href="https://www.linkedin.com/in/tanushree-mohanty-69353323b/"> <img src="linkedin1.png" alt="" width="50" height="50">
+            <h6>Linkedin</h6>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</section>
+<!-- What would you like to learn? ---------------------------->
+<section>
+<div id="learn">
+  <h2>What <span>would</span> you <span>like</span> to <span>learn</span>?</h2>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-square-fill" viewBox="0 0 16 16">
+            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm7.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"/>
+          </svg>
+          &nbsp;
+          Full Stack Web Development
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>This involves building both the front-end (what users see and interact with) and the back-end (server, database, and application logic) of a web application. It includes languages like HTML, CSS, and JavaScript for the front-end, and various technologies like Node.js, Python, Ruby on Rails, or PHP for the back-end. Full stack developers need to understand databases, APIs, server management, and have a good grasp of both front-end and back-end technologies.</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-2-square-fill" viewBox="0 0 16 16">
+            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm4.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306"/>
+          </svg>
+          &nbsp;
+          C Language
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>C is a powerful and efficient programming language. It's widely used in system programming, embedded systems, and creating other programming languages. Known for its speed and close-to-hardware capabilities, it's used in operating systems, firmware development, and software that requires high performance.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-3-square-fill" viewBox="0 0 16 16">
+            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm5.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318"/>
+          </svg>
+          &nbsp;
+          Data Structures & Algorithms
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>These are foundational concepts in computer science. Data structures refer to the way data is organized and stored in a computer to facilitate efficient operations like insertion, deletion, and searching. Examples include arrays, linked lists, trees, graphs, etc. Algorithms, on the other hand, are step-by-step procedures or formulas used for calculations or problem-solving. Knowledge of data structures and algorithms is crucial for writing efficient code and solving complex problems.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- what student says? ---------------------------------------->
+<!-- <section>
+<div id="review">
+  <h2>What <span>student</span> says?</h2>
+</div>
+</section> -->
+<!-- join our coding family ------------------------------------>
+<section>
+<div id="join">
+  <h2>Join <span>our</span> coding <span>family</span></h2>
+  <p> If you're interested in staying updated with our newest posts and courses, feel free to drop by and connect with us through the links provided below.</p>
+  <div id="social-media" style=" padding-top: 20px;">
+    <div class="social-media-icon">
+     <a href="https://www.linkedin.com/company/101227357/admin/feed/posts/"> <img src="linkedin1.png" alt="" width="50" height="50">
+      <p>Linkedin</p>
+    </a>
+    </div>
+    <div class="social-media-icon">
+      <a href="https://www.instagram.com/codingbrigaders/">
+      <img src="instagram1.png" alt="" width="50" height="50">
+      <p>Instagram</p>
+    </a>
+    </div>
+    <div class="social-media-icon">
+      <a href="https://www.youtube.com/@CodingBrigaders">
+      <img src="youtube1.png" alt="" width="50" height="50">
+      <p>Youtube</p>
+    </a>
+    </div>
+    
+    
+  </div>
+</div>
+</section>
+</main>
+<!-- FOOTER ---------------------------------------------------->
+<footer class="text-center text-lg-start" style="background-color:#0e0e7b">
+
+  <!-- Copyright -->
+  <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+   Copyright © 2024 Coding Brigaders All Rights reserved <br>
+    <a class="text-white" href="https://www.linkedin.com/in/tanushree-mohanty-69353323b/">Designed by Tanushree Mohanty</a>
+  </div>
+</footer>
+
+    <!-- BOOTSTRAP JS (BY DEFAULT) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
